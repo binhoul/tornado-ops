@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="utf-8">
+        <title>OPS运维管理平台</title>
+        <meta name="description" content="ops_sa">
+        <meta name="author" content="silence.li@fmkj.net">
+        <link href="{{ static_url("css/mystyle.css") }}" rel="stylesheet" >
+        
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+    </head>
+    <body>
+        <header>
+            <img src="{{ static_url("img/yunwei.jpg") }}" alt="ops" style="display: block; margin-left: auto; margin-right: auto">
+            <h1 style="text-align: center">OPS运维管理平台</h1>
+        </header>
+        <div id="left" style="float:left;width:150px">
+        </div>
+        <div id="main" class="login_panel">
+            <form accept-charset="utf-8" action="/session" method="post">
+                <div class="auth-form-header">
+                    <h3>登陆</h3>
+                </div>
+                <div class="auth-form-body">
+                    <input type="text" id="login_field" name="login" tabindex="1" class="input-block" placeholder="用户名">
+                    <input type="secret" id="password" name="password" tabindex="2" class="input-block" placeholder="密码">
+                    <input class="button" name="commit" tabindex="3" type="submit" value="登陆">
+                </div>
+            </form>
+        </div>
+        <div id="right" style="float:right;">
+        </div>
+
+    </body>
+
+</html>
